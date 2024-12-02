@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Faiz</title>
+    <link rel="icon" href="images/logo.png" />
+    <link rel="stylesheet" href="styles.css" />
+    <!-- FontAwesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <div class="main-container-responsive">
+      <div class="container">
+        <div class="row justify-content-end align-items-start gx-5">
+          <div class="d-flex flex-row bd-highlight mb-3">
+            <nav class="headers">
+              <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <div class="row justify-content-between img-responsive">
+          <div class="col-sm-8 col-md-6 detail">
+            <h1>I'm Syed <span>Faizuddin</span></h1>
+            <p id="about">
+              A passionate Java Full-Stack Developer with experience of
+              <b id="experienceYears"></b> years in Java, Spring Boot, SQL,
+              HTML, CSS, JavaScript and ReactJS. I love solving complex problems
+              and creating scalable web applications.
+            </p>
+            <br />
+            <b
+              >Java Full-Stack Developer | React JS Developer | Problem Solver |
+              Tech Enthusiast</b
+            >
+          </div>
+          <div class="col-sm-2 col-md-4 images">
+            <img src="images/shape.png" class="shape" />
+            <img src="images/profilepic.png" class="profilepic" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col bottom-container">
+            <div id="skills" class="skills-container">
+              <h2>Skills:</h2>
+              <div>
+                <ul>
+                  <li>JAVA</li>
+                  <li>JDBC</li>
+                  <li>JSP</li>
+                  <li>SQL</li>
+                  <li>MYSQL</li>
+                  <li>GIT</li>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>REACT JS</li>
+                  <li>BOOT STRAP</li>
+                  <li>JAVA SCRIPT</li>
+                  <li>SPRING BOOT</li>
+                </ul>
+              </div>
+            </div>
+            <div id="contact" class="contact-container">
+              <h2>Contact:</h2>
+              <div class="row contact-elements">
+                <p class="col-auto">
+                  <i class="fa-sharp fa-solid fa-phone fa-shake"></i>
+                  <span> Phone: </span>
+                  <a href="tel:+916305945730" class="text-white" target="_blank"
+                    >+91 6305945730</a
+                  >
+                </p>
+                <p class="col-auto">
+                  <i class="fa-solid fa-envelope fa-beat"></i>
+                  <span> Email: </span>
+                  <a
+                    href="mailto:syedfaizuddin506@gmail.com"
+                    class="text-white"
+                    target="_blank"
+                    >syedfaizuddin506@gmail.com</a
+                  >
+                </p>
+                <p class="col-auto">
+                  <i class="fa-brands fa-linkedin-in fa-bounce"></i>
+                  <span> LinkedIn: </span>
+                  <a
+                    href="https://www.linkedin.com/in/syed-faizuddin"
+                    class="text-white"
+                    target="_blank"
+                    >Syed Faizuddin</a
+                  >
+                </p>
+                <p class="col-auto">
+                  <i class="fa-brands fa-whatsapp fa-beat"></i>
+                  <span> What's App: </span>
+                  <a href="https://wa.me/916305945730" target="_blank">
+                    Let's chat on whatsapp
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const startYear = 2022;
+      const currentYear = new Date().getFullYear();
+      const yearsOfExperience = currentYear - startYear;
+      document.getElementById("experienceYears").textContent =
+        yearsOfExperience;
+    </script>
+  </body>
+</html>
